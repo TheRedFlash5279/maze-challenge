@@ -216,9 +216,6 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile7, function (sprite, location) {
-    game.over(true)
-})
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (info.score() == Math.min(1, 2)) {
         if (info.life() != 3) {
@@ -1205,7 +1202,7 @@ tiles.setTilemap(tiles.createTilemap(
         ))
 scene.setBackgroundColor(12)
 scene.cameraFollowSprite(MC)
-controller.moveSprite(MC, 500, 500)
+controller.moveSprite(MC, 80, 80)
 info.setLife(3)
 MC.setFlag(SpriteFlag.Ghost, false)
 info.startCountdown(360)
