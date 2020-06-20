@@ -924,6 +924,11 @@ let Statue: Sprite = null
 let S2: Sprite = null
 let End: Sprite = null
 let MC: Sprite = null
+if (game.ask("Are you going to collect", "everything?")) {
+    game.splash("Good Luck!")
+} else {
+    game.splash("You coward.")
+}
 let Beast = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
